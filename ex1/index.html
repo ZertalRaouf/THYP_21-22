@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Montserrat CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F4F4FF;
+        }
+    </style>
+
+    <title>TP THYP</title>
+</head>
+<body>
+
+
+<div class="container py-5">
+    <div id="students" class="row my-5">
+
+    </div>
+</div>
+</div>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script>
+
+    var div = document.getElementById('students');
+    var csvDataUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTM42Rbon532i3N3aW25ZpkoKtsMN-u6C7ycSj6A3DP2QCO89n3OMkseL--aI9a9s3ouwQJsVk6cOFw/pub?gid=513110937&single=true&output=csv";
+    
+    d3.csv(csvDataUrl, function(data) {
+        
+        for (var i = 0; i < data.length ; i++) {
+
+                var card_content="";
+                let url = new URL(data[i]['Votre photo']);
+                let urlParam = new URLSearchParams(url.search);
+                let id = urlParam.get('id');
+                let src = "https://drive.google.com/uc?id="+id+"&export=download";  
+               
+                card_content += '<div class="col-lg-3 mb-3">';
+                card_content += '<div class="card border-0 shadow-sm h-100 text-center py-3">';
+                card_content += '<div class="card-body">';
+                card_content += '<div class="d-flex justify-content-center">';
+                card_content += '<div style="width: 100px; height: 100px; border-radius: 50%; background-image: url('+src+'); background-position: center; background-size: cover">'+'</div>';
+                card_content += '</div>';
+
+                card_content += '<div class="h5 mb-2 mt-4 mb-0 fw-bold">'+ data[i]["Votre nom"]+' '+data[i]["Votre prénom"]+'</div>';
+                card_content += '<div class="text-secondary small my-2">'+'<i class="fas fa-envelope me-1"></i>'+ data[i]["Votre mail"]+'</div>';
+                card_content += '<div class="text-secondary small">'+'<i class="fab fa-github me-1"></i>'+ data[i]["Votre compte GitHub"]+'</div>';
+                card_content += '<div class="small mt-3"><a href="#modal'+i+'" data-bs-toggle="modal">plus d\'informations</a></div>';
+                
+                card_content += '</div>';
+                card_content += '</div>';
+                card_content += '</div>';
+
+                card_content += '<div class="modal fade" id="modal'+i+'" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">'
+                card_content += '<div class="modal-dialog modal-lg modal-dialog-centered">'
+                card_content += '<div class="modal-content">'
+                card_content += '<div class="modal-header">'
+                    
+                card_content += '<h5 class="modal-title" id="exampleModalLabel">Informations sur'+' '+ data[i]["Votre nom"]+' '+data[i]["Votre prénom"]+'</h5>'
+                card_content += '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>'
+                card_content += '</div>'
+                card_content += '<div class="modal-body">'
+                card_content += '<div class="small text-secondary mt-4">Nom</div>'   
+                card_content += '<div>'+data[i]["Votre nom"]+'</div>'
+                card_content += '<div class="small text-secondary mt-4">Prénom</div>' 
+                card_content += '<div>'+data[i]["Votre prénom"]+'</div>'
+                card_content += '<div class="small text-secondary mt-4">Adresse email</div>' 
+                card_content += '<div>'+data[i]["Votre mail"]+'</div>'
+                card_content += '<div class="small text-secondary mt-4">Compte GitHub</div>' 
+                card_content += '<div>'+data[i]["Votre compte GitHub"]+'</div>'
+                card_content += '<div class="small text-secondary mt-4">Parcours</div>' 
+                card_content += '<div>'+data[i]["Dans quel parcours êtes vous inscris ?"]+'</div>'
+                card_content += '<div class="small text-secondary mt-4">Spécialités</div>' 
+                card_content += '<div>'+data[i]["Vos spécialités"]+'</div>'
+                card_content += '</div>'
+                card_content += '<div class="modal-footer">'
+                card_content += '<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>'
+
+                card_content += '</div>'
+                card_content += '</div>'
+                card_content += '</div>'
+                card_content += '</div>'
+
+                div.innerHTML +=card_content;
+
+        }
+    });
+</script>
+
+</body>
+</html>
+
