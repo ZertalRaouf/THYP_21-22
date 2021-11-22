@@ -18,19 +18,30 @@ football:Joueur a rdfs:Class ;
     rdfs:label "Joueur" ;
     rdfs:subClassOf football:Personne .
 
-football:isPlayerOf a rdf:Property ;
+football:IsPlayerOf a rdf:Property ;
     rdfs:label "Joue pour une équipe" ;
 rdfs:domain football:Joueur .
 
-football:isPartOf a rdf:Property ;
+football:IsPartOf a rdf:Property ;
     rdfs:label "fait partie d’une team" ;
 rdfs:domain football:Joueur .
 
-football:hasNumber rdf:Property ;
-    rdfs:label "joueur possédant un numero de t_shirt" ;
+football:HasNumber rdf:Property ;
+    rdfs:label "joueur possédant un numéro de tshirt" ;
 rdfs:domain football:Joueur .
 
-football:isComposed rdf:Property ;
+football:IsComposed rdf:Property ;
     rdfs:label "équipe composé de joueurs" ;
 rdfs:domain football:Equipe .
 rdfs:domain football:Joueur .
+
+football:PlaysAgainst rdf:Property ;
+    rdfs:label "une équipe joue contre une autre équipe" ;
+rdfs:domain football:Equipe .
+rdfs:domain football:Joueur .
+
+
+
+
+
+
