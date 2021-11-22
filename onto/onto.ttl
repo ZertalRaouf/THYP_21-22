@@ -1,1 +1,24 @@
-#
+@prefix football: <http://omeka.org/s/vocabs/football#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+# football
+
+football:Personne a rdfs:Class ;
+    rdfs:label "Personne" .
+
+football:Equipe a rdfs:Class ;
+    rdfs:label "Equipe" .
+
+football:Joueur a rdfs:Class ;
+    rdfs:label "Joueur" ;
+    rdfs:subClassOf football:Personne .
+
+
+football:isPlayerOf a rdf:Property ;
+    rdfs:label "Joue pour une équipe" ;
