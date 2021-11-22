@@ -6,7 +6,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-
 # football
 
 football:Personne a rdfs:Class ;
@@ -19,6 +18,19 @@ football:Joueur a rdfs:Class ;
     rdfs:label "Joueur" ;
     rdfs:subClassOf football:Personne .
 
-
 football:isPlayerOf a rdf:Property ;
     rdfs:label "Joue pour une équipe" ;
+rdfs:domain football:Joueur .
+
+football:isPartOf a rdf:Property ;
+    rdfs:label "fait partie d’une team" ;
+rdfs:domain football:Joueur .
+
+football:hasNumber rdf:Property ;
+    rdfs:label "joueur possédant un numero de t_shirt" ;
+rdfs:domain football:Joueur .
+
+football:isComposed rdf:Property ;
+    rdfs:label "équipe composé de joueurs" ;
+rdfs:domain football:Equipe .
+rdfs:domain football:Joueur .
