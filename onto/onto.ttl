@@ -26,20 +26,20 @@ football:IsPartOf a rdf:Property ;
     rdfs:label "fait partie d’une team" ;
     rdfs:domain football:Joueur .
 
-football:HasNumber rdf:Property ;
+football:HasNumber a rdf:Property ;
     rdfs:label "joueur possédant un numéro de tshirt" ;
     rdfs:domain football:Joueur .
 
-football:HasPosition rdf:Property ;
+football:HasPosition a rdf:Property ;
     rdfs:label "joueur a un poste sur le terrain" ;
     rdfs:domain football:Joueur .
 
-football:IsComposed rdf:Property ;
+football:IsComposed a rdf:Property ;
     rdfs:label "équipe composé de joueurs" ;
     rdfs:domain football:Equipe ;
     rdfs:range football:Joueur .
 
-football:PlaysAgainst rdf:Property ;
+football:PlaysAgainst a rdf:Property ;
     rdfs:label "une équipe joue contre une autre équipe" ;
     rdfs:domain football:Equipe ;
     rdfs:range football:Joueur .
