@@ -1,67 +1,64 @@
-// 20211129083909
-// http://localhost/omeka/api/items/8
-
 {
-    "@context": "http://localhost/omeka/api-context",
-    "@id": "http://localhost/omeka/api/items/8",
-    "@type": [
-      "o:Item",
-      "football:Coach"
-    ],
-    "o:id": 8,
-    "o:is_public": true,
-    "o:owner": {
-      "@id": "http://localhost/omeka/api/users/1",
-      "o:id": 1
-    },
-    "o:resource_class": {
-      "@id": "http://localhost/omeka/api/resource_classes/131",
-      "o:id": 131
-    },
-    "o:resource_template": {
-      "@id": "http://localhost/omeka/api/resource_templates/10",
-      "o:id": 10
-    },
-    "o:thumbnail": null,
-    "o:title": "Klop",
-    "thumbnail_display_urls": {
-      "large": null,
-      "medium": null,
-      "square": null
-    },
-    "o:created": {
-      "@value": "2021-11-29T07:29:48+00:00",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "o:modified": {
-      "@value": "2021-11-29T07:29:48+00:00",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "o:media": [
-      
-    ],
-    "o:item_set": [
-      
-    ],
-    "o:site": [
-      
-    ],
-    "dcterms:title": [
-      {
-        "type": "literal",
-        "property_id": 1,
-        "property_label": "Title",
-        "is_public": true,
-        "@value": "Klop"
-      }
-    ],
-    "football:isTrainerOf": [
-      {
-        "type": "literal",
-        "property_id": 255,
-        "property_label": "Is trainer of",
-        "is_public": true,
-        "@value": "Liverpool"
-      }
-    ]
-  }
+  "@context": "http://localhost/omeka/api-context",
+  "@id": "http://localhost/omeka/api/items/8",
+  "@type": [
+    "o:Item",
+    "football:Coach"
+  ],
+  "o:id": 8,
+  "o:is_public": true,
+  "o:owner": {
+    "@id": "http://localhost/omeka/api/users/1",
+    "o:id": 1
+  },
+  "o:resource_class": {
+    "@id": "http://localhost/omeka/api/resource_classes/131",
+    "o:id": 131
+  },
+  "o:resource_template": {
+    "@id": "http://localhost/omeka/api/resource_templates/10",
+    "o:id": 10
+  },
+  "o:thumbnail": null,
+  "o:title": "Klop",
+  "thumbnail_display_urls": {
+    "large": null,
+    "medium": null,
+    "square": null
+  },
+  "o:created": {
+    "@value": "2021-11-29T07:29:48+00:00",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "o:modified": {
+    "@value": "2021-11-29T07:29:48+00:00",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "o:media": [
+    
+  ],
+  "o:item_set": [
+    
+  ],
+  "o:site": [
+    
+  ],
+  "dcterms:title": [
+    {
+      "type": "literal",
+      "property_id": 1,
+      "property_label": "Title",
+      "is_public": true,
+      "@value": "Klop"
+    }
+  ],
+  "football:isTrainerOf": [
+    {
+      "type": "literal",
+      "property_id": 255,
+      "property_label": "Is trainer of",
+      "is_public": true,
+      "@value": "Liverpool"
+    }
+  ]
+}

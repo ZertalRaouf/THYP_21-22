@@ -1,6 +1,3 @@
-// 20211129083751
-// http://localhost/omeka/api/items/3
-
 {
   "@context": "http://localhost/omeka/api-context",
   "@id": "http://localhost/omeka/api/items/3",
