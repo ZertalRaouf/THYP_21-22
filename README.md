@@ -6,7 +6,7 @@
 
 ## Récapitulaitif omk
 
-[Lien vers le le récapitulaitif omk](omk/index.html) 
+[Lien vers le le récapitulaitif omk](https://zertalraouf.github.io/THYP_21-22/omk/) 
 
 ## Api du projet omeka
 
@@ -21,7 +21,7 @@
 
 ## Trombinoscope
 
-[Lien vers le Trombinoscope (ex1)](ex1/index.html) 
+[Lien vers le Trombinoscope (ex1)](https://zertalraouf.github.io/THYP_21-22/ex1/) 
 
 
 
