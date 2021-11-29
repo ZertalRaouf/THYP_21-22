@@ -8,38 +8,47 @@
 
 # football
 
-football:Personne a rdfs:Class ;
-    rdfs:label "Personne" .
+football:Person a rdfs:Class ;
+    rdfs:label "Person"@en .
 
-football:Equipe a rdfs:Class ;
-    rdfs:label "Equipe" .
+football:Team a rdfs:Class ;
+    rdfs:label "Team"@en .
 
-football:Joueur a rdfs:Class ;
-    rdfs:label "Joueur" ;
-    rdfs:subClassOf football:Personne .
+football:Coach a rdfs:Class ;
+    rdfs:label "Coach"@en .
 
-football:IsPlayerOf a rdf:Property ;
-    rdfs:label "Joue pour une équipe" ;
-    rdfs:domain football:Joueur .
+football:Player a rdfs:Class ;
+    rdfs:label "Player"@en ;
+    rdfs:subClassOf football:Person .
 
-football:IsPartOf a rdf:Property ;
-    rdfs:label "fait partie d’une team" ;
-    rdfs:domain football:Joueur .
 
-football:HasNumber a rdf:Property ;
-    rdfs:label "joueur possédant un numéro de tshirt" ;
-    rdfs:domain football:Joueur .
 
-football:HasPosition a rdf:Property ;
-    rdfs:label "joueur a un poste sur le terrain" ;
-    rdfs:domain football:Joueur .
+football:isPlayerOf a rdf:Property ;
+    rdfs:label "Is player of"@en ;
+    rdfs:domain football:Player .
 
-football:IsComposed a rdf:Property ;
-    rdfs:label "équipe composé de joueurs" ;
-    rdfs:domain football:Equipe ;
-    rdfs:range football:Joueur .
+football:isPartOf a rdf:Property ;
+    rdfs:label "Is part of"@en ;
+    rdfs:domain football:Player .
 
-football:PlaysAgainst a rdf:Property ;
-    rdfs:label "une équipe joue contre une autre équipe" ;
-    rdfs:domain football:Equipe ;
-    rdfs:range football:Joueur .
+football:hasNumber a rdf:Property ;
+    rdfs:label "Has number"@en ;
+    rdfs:domain football:Player .
+
+football:hasPosition a rdf:Property ;
+    rdfs:label "Has position"@en ;
+    rdfs:domain football:Player .
+
+football:isComposed a rdf:Property ;
+    rdfs:label "Is composed"@en ;
+    rdfs:domain football:Team ;
+    rdfs:range football:Player .
+
+football:playsAgainst a rdf:Property ;
+    rdfs:label "Plays against"@en ;
+    rdfs:domain football:Team ;
+    rdfs:range football:Player .
+
+football:isTrainerOf a rdf:Property ;
+    rdfs:label "Is trainer of"@en ;
+    rdfs:domain football:Coach .

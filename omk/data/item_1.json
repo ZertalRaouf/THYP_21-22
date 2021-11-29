@@ -1,0 +1,127 @@
+{
+"@context": "http://localhost/omeka/api-context",
+"@id": "http://localhost/omeka/api/items/1",
+"@type": [
+"o:Item",
+"time:MonthOfYear"
+],
+"o:id": 1,
+"o:is_public": true,
+"o:owner": {
+"@id": "http://localhost/omeka/api/users/1",
+"o:id": 1
+},
+"o:resource_class": {
+"@id": "http://localhost/omeka/api/resource_classes/120",
+"o:id": 120
+},
+"o:resource_template": null,
+"o:thumbnail": null,
+"o:title": "september",
+"thumbnail_display_urls": {
+"large": null,
+"medium": null,
+"square": null
+},
+"o:created": {
+"@value": "2021-11-15T07:57:40+00:00",
+"@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+},
+"o:modified": {
+"@value": "2021-11-15T07:58:52+00:00",
+"@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+},
+"o:media": [],
+"o:item_set": [],
+"o:site": [],
+"dcterms:title": [
+{
+"type": "literal",
+"property_id": 1,
+"property_label": "Title",
+"is_public": true,
+"@value": "september"
+}
+],
+"time:monthOfYear": [
+{
+"type": "resource",
+"property_id": 187,
+"property_label": "month of year",
+"is_public": true,
+"@id": "http://localhost/omeka/api/items/2",
+"value_resource_id": 2,
+"value_resource_name": "items",
+"url": null,
+"display_title": "2021 year"
+}
+]
+}
+// 20211129083443
+// http://localhost/omeka/api/items/1
+​
+{
+  "@context": "http://localhost/omeka/api-context",
+  "@id": "http://localhost/omeka/api/items/1",
+  "@type": [
+    "o:Item",
+    "time:MonthOfYear"
+  ],
+  "o:id": 1,
+  "o:is_public": true,
+  "o:owner": {
+    "@id": "http://localhost/omeka/api/users/1",
+    "o:id": 1
+  },
+  "o:resource_class": {
+    "@id": "http://localhost/omeka/api/resource_classes/120",
+    "o:id": 120
+  },
+  "o:resource_template": null,
+  "o:thumbnail": null,
+  "o:title": "september",
+  "thumbnail_display_urls": {
+    "large": null,
+    "medium": null,
+    "square": null
+  },
+  "o:created": {
+    "@value": "2021-11-15T07:57:40+00:00",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "o:modified": {
+    "@value": "2021-11-15T07:58:52+00:00",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "o:media": [
+    
+  ],
+  "o:item_set": [
+    
+  ],
+  "o:site": [
+    
+  ],
+  "dcterms:title": [
+    {
+      "type": "literal",
+      "property_id": 1,
+      "property_label": "Title",
+      "is_public": true,
+      "@value": "september"
+    }
+  ],
+  "time:monthOfYear": [
+    {
+      "type": "resource",
+      "property_id": 187,
+      "property_label": "month of year",
+      "is_public": true,
+      "@id": "http://localhost/omeka/api/items/2",
+      "value_resource_id": 2,
+      "value_resource_name": "items",
+      "url": null,
+      "display_title": "2021 year"
+    }
+  ]
+}

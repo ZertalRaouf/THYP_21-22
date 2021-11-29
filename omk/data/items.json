@@ -1,0 +1,701 @@
+// 20211129083205
+// http://localhost/omeka/api/items
+
+[
+  {
+    "@context": "http://localhost/omeka/api-context",
+    "@id": "http://localhost/omeka/api/items/1",
+    "@type": [
+      "o:Item",
+      "time:MonthOfYear"
+    ],
+    "o:id": 1,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka/api/resource_classes/120",
+      "o:id": 120
+    },
+    "o:resource_template": null,
+    "o:thumbnail": null,
+    "o:title": "september",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2021-11-15T07:57:40+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2021-11-15T07:58:52+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [
+      
+    ],
+    "o:item_set": [
+      
+    ],
+    "o:site": [
+      
+    ],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "september"
+      }
+    ],
+    "time:monthOfYear": [
+      {
+        "type": "resource",
+        "property_id": 187,
+        "property_label": "month of year",
+        "is_public": true,
+        "@id": "http://localhost/omeka/api/items/2",
+        "value_resource_id": 2,
+        "value_resource_name": "items",
+        "url": null,
+        "display_title": "2021 year"
+      }
+    ]
+  },
+  {
+    "@context": "http://localhost/omeka/api-context",
+    "@id": "http://localhost/omeka/api/items/2",
+    "@type": [
+      "o:Item",
+      "time:Year"
+    ],
+    "o:id": 2,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka/api/resource_classes/125",
+      "o:id": 125
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka/api/resource_templates/3",
+      "o:id": 3
+    },
+    "o:thumbnail": null,
+    "o:title": "2021 year",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2021-11-15T07:58:15+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2021-11-15T07:58:15+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [
+      
+    ],
+    "o:item_set": [
+      
+    ],
+    "o:site": [
+      
+    ],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "2021 year"
+      }
+    ]
+  },
+  {
+    "@context": "http://localhost/omeka/api-context",
+    "@id": "http://localhost/omeka/api/items/3",
+    "@type": [
+      "o:Item",
+      "football:Player"
+    ],
+    "o:id": 3,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka/api/resource_classes/132",
+      "o:id": 132
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka/api/resource_templates/5",
+      "o:id": 5
+    },
+    "o:thumbnail": null,
+    "o:title": "Ronaldo",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2021-11-29T07:27:05+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2021-11-29T07:27:05+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [
+      
+    ],
+    "o:item_set": [
+      
+    ],
+    "o:site": [
+      
+    ],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "Ronaldo"
+      }
+    ],
+    "football:hasNumber": [
+      {
+        "type": "literal",
+        "property_id": 251,
+        "property_label": "Has number",
+        "is_public": true,
+        "@value": "7"
+      }
+    ]
+  },
+  {
+    "@context": "http://localhost/omeka/api-context",
+    "@id": "http://localhost/omeka/api/items/4",
+    "@type": [
+      "o:Item",
+      "football:Player"
+    ],
+    "o:id": 4,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka/api/resource_classes/132",
+      "o:id": 132
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka/api/resource_templates/5",
+      "o:id": 5
+    },
+    "o:thumbnail": null,
+    "o:title": "Messi",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2021-11-29T07:27:27+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2021-11-29T07:27:27+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [
+      
+    ],
+    "o:item_set": [
+      
+    ],
+    "o:site": [
+      
+    ],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "Messi"
+      }
+    ],
+    "football:hasNumber": [
+      {
+        "type": "literal",
+        "property_id": 251,
+        "property_label": "Has number",
+        "is_public": true,
+        "@value": "10"
+      }
+    ]
+  },
+  {
+    "@context": "http://localhost/omeka/api-context",
+    "@id": "http://localhost/omeka/api/items/5",
+    "@type": [
+      "o:Item",
+      "football:Player"
+    ],
+    "o:id": 5,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka/api/resource_classes/132",
+      "o:id": 132
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka/api/resource_templates/6",
+      "o:id": 6
+    },
+    "o:thumbnail": null,
+    "o:title": "Casillas",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2021-11-29T07:28:24+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2021-11-29T07:28:24+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [
+      
+    ],
+    "o:item_set": [
+      
+    ],
+    "o:site": [
+      
+    ],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "Casillas"
+      }
+    ],
+    "football:hasPosition": [
+      {
+        "type": "literal",
+        "property_id": 252,
+        "property_label": "Has position",
+        "is_public": true,
+        "@value": "Goalkeeper"
+      }
+    ]
+  },
+  {
+    "@context": "http://localhost/omeka/api-context",
+    "@id": "http://localhost/omeka/api/items/6",
+    "@type": [
+      "o:Item",
+      "football:Player"
+    ],
+    "o:id": 6,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka/api/resource_classes/132",
+      "o:id": 132
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka/api/resource_templates/8",
+      "o:id": 8
+    },
+    "o:thumbnail": null,
+    "o:title": "Ronaldo",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2021-11-29T07:28:57+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2021-11-29T07:28:57+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [
+      
+    ],
+    "o:item_set": [
+      
+    ],
+    "o:site": [
+      
+    ],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "Ronaldo"
+      }
+    ],
+    "football:isPartOf": [
+      {
+        "type": "literal",
+        "property_id": 250,
+        "property_label": "Is part of",
+        "is_public": true,
+        "@value": "Manchester united"
+      }
+    ]
+  },
+  {
+    "@context": "http://localhost/omeka/api-context",
+    "@id": "http://localhost/omeka/api/items/7",
+    "@type": [
+      "o:Item",
+      "football:Team"
+    ],
+    "o:id": 7,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka/api/resource_classes/130",
+      "o:id": 130
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka/api/resource_templates/11",
+      "o:id": 11
+    },
+    "o:thumbnail": null,
+    "o:title": "Real Madrid",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2021-11-29T07:29:23+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2021-11-29T07:29:23+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [
+      
+    ],
+    "o:item_set": [
+      
+    ],
+    "o:site": [
+      
+    ],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "Real Madrid"
+      }
+    ],
+    "football:playsAgainst": [
+      {
+        "type": "literal",
+        "property_id": 254,
+        "property_label": "Plays against",
+        "is_public": true,
+        "@value": "Barcelona"
+      }
+    ]
+  },
+  {
+    "@context": "http://localhost/omeka/api-context",
+    "@id": "http://localhost/omeka/api/items/8",
+    "@type": [
+      "o:Item",
+      "football:Coach"
+    ],
+    "o:id": 8,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka/api/resource_classes/131",
+      "o:id": 131
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka/api/resource_templates/10",
+      "o:id": 10
+    },
+    "o:thumbnail": null,
+    "o:title": "Klop",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2021-11-29T07:29:48+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2021-11-29T07:29:48+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [
+      
+    ],
+    "o:item_set": [
+      
+    ],
+    "o:site": [
+      
+    ],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "Klop"
+      }
+    ],
+    "football:isTrainerOf": [
+      {
+        "type": "literal",
+        "property_id": 255,
+        "property_label": "Is trainer of",
+        "is_public": true,
+        "@value": "Liverpool"
+      }
+    ]
+  },
+  {
+    "@context": "http://localhost/omeka/api-context",
+    "@id": "http://localhost/omeka/api/items/9",
+    "@type": [
+      "o:Item",
+      "football:Player"
+    ],
+    "o:id": 9,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka/api/resource_classes/132",
+      "o:id": 132
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka/api/resource_templates/5",
+      "o:id": 5
+    },
+    "o:thumbnail": null,
+    "o:title": "Neymar",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2021-11-29T07:30:15+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2021-11-29T07:30:15+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [
+      
+    ],
+    "o:item_set": [
+      
+    ],
+    "o:site": [
+      
+    ],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "Neymar"
+      }
+    ],
+    "football:hasNumber": [
+      {
+        "type": "literal",
+        "property_id": 251,
+        "property_label": "Has number",
+        "is_public": true,
+        "@value": "10"
+      }
+    ]
+  },
+  {
+    "@context": "http://localhost/omeka/api-context",
+    "@id": "http://localhost/omeka/api/items/10",
+    "@type": [
+      "o:Item",
+      "football:Coach"
+    ],
+    "o:id": 10,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka/api/resource_classes/131",
+      "o:id": 131
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka/api/resource_templates/10",
+      "o:id": 10
+    },
+    "o:thumbnail": null,
+    "o:title": "Belmadi",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2021-11-29T07:30:40+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2021-11-29T07:30:40+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [
+      
+    ],
+    "o:item_set": [
+      
+    ],
+    "o:site": [
+      
+    ],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "Belmadi"
+      }
+    ],
+    "football:isTrainerOf": [
+      {
+        "type": "literal",
+        "property_id": 255,
+        "property_label": "Is trainer of",
+        "is_public": true,
+        "@value": "Algeria"
+      }
+    ]
+  },
+  {
+    "@context": "http://localhost/omeka/api-context",
+    "@id": "http://localhost/omeka/api/items/11",
+    "@type": [
+      "o:Item",
+      "football:Team"
+    ],
+    "o:id": 11,
+    "o:is_public": true,
+    "o:owner": {
+      "@id": "http://localhost/omeka/api/users/1",
+      "o:id": 1
+    },
+    "o:resource_class": {
+      "@id": "http://localhost/omeka/api/resource_classes/130",
+      "o:id": 130
+    },
+    "o:resource_template": {
+      "@id": "http://localhost/omeka/api/resource_templates/11",
+      "o:id": 11
+    },
+    "o:thumbnail": null,
+    "o:title": "Bayern munich",
+    "thumbnail_display_urls": {
+      "large": null,
+      "medium": null,
+      "square": null
+    },
+    "o:created": {
+      "@value": "2021-11-29T07:31:17+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+      "@value": "2021-11-29T07:31:17+00:00",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [
+      
+    ],
+    "o:item_set": [
+      
+    ],
+    "o:site": [
+      
+    ],
+    "dcterms:title": [
+      {
+        "type": "literal",
+        "property_id": 1,
+        "property_label": "Title",
+        "is_public": true,
+        "@value": "Bayern munich"
+      }
+    ],
+    "football:playsAgainst": [
+      {
+        "type": "literal",
+        "property_id": 254,
+        "property_label": "Plays against",
+        "is_public": true,
+        "@value": "Dortmund"
+      }
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+// 20211129083751
+// http://localhost/omeka/api/items/3
+
+{
+  "@context": "http://localhost/omeka/api-context",
+  "@id": "http://localhost/omeka/api/items/3",
+  "@type": [
+    "o:Item",
+    "football:Player"
+  ],
+  "o:id": 3,
+  "o:is_public": true,
+  "o:owner": {
+    "@id": "http://localhost/omeka/api/users/1",
+    "o:id": 1
+  },
+  "o:resource_class": {
+    "@id": "http://localhost/omeka/api/resource_classes/132",
+    "o:id": 132
+  },
+  "o:resource_template": {
+    "@id": "http://localhost/omeka/api/resource_templates/5",
+    "o:id": 5
+  },
+  "o:thumbnail": null,
+  "o:title": "Ronaldo",
+  "thumbnail_display_urls": {
+    "large": null,
+    "medium": null,
+    "square": null
+  },
+  "o:created": {
+    "@value": "2021-11-29T07:27:05+00:00",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "o:modified": {
+    "@value": "2021-11-29T07:27:05+00:00",
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+  },
+  "o:media": [
+    
+  ],
+  "o:item_set": [
+    
+  ],
+  "o:site": [
+    
+  ],
+  "dcterms:title": [
+    {
+      "type": "literal",
+      "property_id": 1,
+      "property_label": "Title",
+      "is_public": true,
+      "@value": "Ronaldo"
+    }
+  ],
+  "football:hasNumber": [
+    {
+      "type": "literal",
+      "property_id": 251,
+      "property_label": "Has number",
+      "is_public": true,
+      "@value": "7"
+    }
+  ]
+}
